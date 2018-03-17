@@ -93,7 +93,7 @@ impl<'a> OplogBuilder<'a> {
     /// }
     /// # }
     /// ```
-    pub fn new(client: &'a Client) -> OplogBuilder<'a> {
+    pub fn new(client: &Client) -> OplogBuilder {
         OplogBuilder {
             client: client,
             filter: None,
